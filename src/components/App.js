@@ -10,22 +10,22 @@ class App extends Component {
             {
                 id: 1,
                 text: 'Kup jogurt',
-                isDone: false,
+                important: true,
             },
              {
                 id: 2,
                 text: 'Zaprowadź psa na szczepienie',
-                isDone: false,
+                important: false,
             },
              {
                 id: 3,
                 text: 'Zadzwoń do Karola z pracy',
-                isDone: false,
+                important: false,
             },
             {
                 id: 4,
                 text: 'Pamiętaj o urodzinach teściowej',
-                isDone: false,
+                important: false,
             },
         ]
     }
@@ -37,12 +37,25 @@ deleteTask = (id) => {
         tasks,
     })
 }
+
+addTask = (text, important) => {
+    const task = {
+        id: 1,
+        text: text ,
+        important: important,
+    }
+    
+    this.setState(prevState => ({
+        tasks: [...prevState.tasks, task]
+    }))
+    return true
+}
     
   render() {
     return (
       <div className="app">
         <h1>Lista zadań</h1>
-        <AddTask />
+        <AddTask add={this.addTask}/>
         <TaskList tasks={this.state.tasks} delete={this.deleteTask}/>
       </div>
     );
