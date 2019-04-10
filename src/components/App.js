@@ -11,25 +11,28 @@ class App extends Component {
                 id: 1,
                 text: 'Kup jogurt',
                 important: true,
+                status: false,
             },
              {
                 id: 2,
                 text: 'Zaprowadź psa na szczepienie',
                 important: false,
+                status: false,
             },
              {
                 id: 3,
                 text: 'Zadzwoń do Karola z pracy',
                 important: false,
+                status: true,
             },
             {
                 id: 4,
                 text: 'Pamiętaj o urodzinach teściowej',
                 important: false,
+                status: false,
             },
         ]
     }
-
     
 deleteTask = (id) => {
     const tasks = [...this.state.tasks].filter(task => task.id !== id)
@@ -37,6 +40,8 @@ deleteTask = (id) => {
         tasks,
     })
 }
+
+
 
 addTask = (text, important) => {
     const task = {
