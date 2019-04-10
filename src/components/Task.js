@@ -5,7 +5,9 @@ const Task = (props) => {
     
     return (
         <div>
-            <div>task</div>
+            <p>{props.task.text}</p>
+            <input type="checkbox" />
+            <button onClick={()=> props.delete(props.task.id)}>X</button>
         </div>
     )
 }

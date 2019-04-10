@@ -29,13 +29,21 @@ class App extends Component {
             },
         ]
     }
+
+    
+deleteTask = (id) => {
+    const tasks = [...this.state.tasks].filter(task => task.id !== id)
+    this.setState({
+        tasks,
+    })
+}
     
   render() {
     return (
       <div className="app">
         <h1>Lista zadań</h1>
         <AddTask />
-        <TaskList tasks={this.state.tasks} />
+        <TaskList tasks={this.state.tasks} delete={this.deleteTask}/>
       </div>
     );
   }
