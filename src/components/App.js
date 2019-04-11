@@ -58,6 +58,7 @@ taskDone = (id) => {
 
 
 addTask = (text, important) => {
+    if(text.length) {
     const task = {
         id: uuid.v4(),
         text: text ,
@@ -67,9 +68,10 @@ addTask = (text, important) => {
     
     
     this.setState(prevState => ({
-        tasks: [...prevState.tasks, task]
+        tasks: [...prevState.tasks, task],
     }))
     return true
+    }
 }
 
   render() {

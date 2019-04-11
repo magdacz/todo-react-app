@@ -7,7 +7,7 @@ const TaskList = (props) => {
     return (
         <div>
             <div>Lista tasków</div>
-            {tasks}
+            {tasks.length ? tasks : <p>Brak zadań</p>}
         </div>
     )
 }

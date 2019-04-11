@@ -21,8 +21,7 @@ class AddTask extends Component {
     }
     
     handleAddTask = () => {
-        console.log('dodaj');
-        const {value, checked} = this.state;
+        const {value, checked} = this.state; 
         const add = this.props.add(value, checked);
         if(add) {
             this.setState({
@@ -30,6 +29,7 @@ class AddTask extends Component {
                 checked: false,
             })
         }
+    
     }
 
     
