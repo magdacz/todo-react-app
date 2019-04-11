@@ -1,0 +1,4 @@
+.line:checked p {
+        color: #999;
+      text-decoration: line-through;
+      }

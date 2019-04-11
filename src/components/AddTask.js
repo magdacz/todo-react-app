@@ -39,7 +39,7 @@ class AddTask extends Component {
             <h2>Dodaj zadanie</h2>
             <input type='text' placeholder='Dodaj nowe zadanie...' value={this.state.value} onChange={this.handleChange}/>
             <input type='checkbox' checked={this.state.checked} id='important' onChange={this.handleCheckbox}/>
-            <label htmFor='important'>Priorytet</label>
+            <label htmlFor='important'>Priorytet</label>
             <button onClick={this.handleAddTask}>Dodaj</button>
             </div>
         )

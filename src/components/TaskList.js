@@ -3,7 +3,7 @@ import Task from './Task';
 
 const TaskList = (props) => {
     
-    const tasks = props.tasks.map(task => <Task key={task.id} task={task} delete={props.delete} />)
+    const tasks = props.tasks.map(task => <Task key={task.id} task={task} delete={props.delete} taskDone={props.taskDone}/>)
     return (
         <div>
             <div>Lista tasków</div>
@@ -11,5 +11,6 @@ const TaskList = (props) => {
         </div>
     )
 }
+
 
 export default TaskList; 
