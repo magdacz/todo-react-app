@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import AddTask from './AddTask';
 import TaskList from './TaskList';
-import './App.css';
+
+import './App.scss';
+
 import uuid from 'uuid';
 
 class App extends Component {
@@ -11,13 +13,13 @@ class App extends Component {
             {
                 id: uuid.v4(),
                 text: 'Kup jogurt',
-                important: true,
+                important: false,
                 status: false,
             },
              {
                 id: uuid.v4(),
-                text: 'Zaprowadź psa na szczepienie',
-                important: false,
+                text: 'Zaprowadź psa do weterynarza',
+                important: true,
                 status: false,
             },
              {
@@ -26,12 +28,7 @@ class App extends Component {
                 important: false,
                 status: true,
             },
-            {
-                id: uuid.v4(),
-                text: 'Pamiętaj o urodzinach teściowej',
-                important: false,
-                status: false,
-            },
+         
         ]
     }
 
