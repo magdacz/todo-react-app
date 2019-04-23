@@ -39,6 +39,7 @@ deleteTask = (id) => {
     })
 }
 
+/*
 taskDone = (id) => {
     const task = [...this.state.tasks].map(item => {
       if (item.id === id)
@@ -52,7 +53,21 @@ taskDone = (id) => {
     })
 }
 
+*/
 
+taskDone = (id) => {
+    const task = this.state.tasks;
+    task.map(item => {
+        if(item.id === id) {
+            item.status = !item.status
+        }
+        return item;
+    })
+    
+    this.setState({
+        tasks: task,
+    })
+}
 
 addTask = (text, important) => {
     if(text.length) {
