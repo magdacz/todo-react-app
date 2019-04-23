@@ -1,0 +1,15 @@
+{
+  "main.css": "/todo-react-app/static/css/main.38e4d2f2.chunk.css",
+  "main.js": "/todo-react-app/static/js/main.f4d0bb3a.chunk.js",
+  "main.js.map": "/todo-react-app/static/js/main.f4d0bb3a.chunk.js.map",
+  "runtime~main.js": "/todo-react-app/static/js/runtime~main.7e9341e7.js",
+  "runtime~main.js.map": "/todo-react-app/static/js/runtime~main.7e9341e7.js.map",
+  "static/js/2.b48df737.chunk.js": "/todo-react-app/static/js/2.b48df737.chunk.js",
+  "static/js/2.b48df737.chunk.js.map": "/todo-react-app/static/js/2.b48df737.chunk.js.map",
+  "index.html": "/todo-react-app/index.html",
+  "precache-manifest.ef1c0debf2d6d8c764af015caaddb436.js": "/todo-react-app/precache-manifest.ef1c0debf2d6d8c764af015caaddb436.js",
+  "service-worker.js": "/todo-react-app/service-worker.js",
+  "static/css/main.38e4d2f2.chunk.css.map": "/todo-react-app/static/css/main.38e4d2f2.chunk.css.map",
+  "static/media/cancel.svg": "/todo-react-app/static/media/cancel.cd1261c6.svg",
+  "static/media/check.svg": "/todo-react-app/static/media/check.9588bf25.svg"
+}
